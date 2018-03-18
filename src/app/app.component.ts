@@ -7,4 +7,14 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+  displayRedBox = true;
+  listOfCourses = [
+    'Angular',
+    'JavaScript',
+    'NodeJS'
+  ]
+toggleDisplay() {
+    this.displayRedBox = !this.displayRedBox;
+  }
+
 }
